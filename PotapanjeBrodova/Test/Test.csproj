@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6756B36A-B713-4A31-A0A8-A661909B5374}</ProjectGuid>
+    <ProjectGuid>{B5DAA4FF-914F-4AB4-B20B-DE868B382656}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Test</RootNamespace>
     <AssemblyName>Test</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -36,6 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,13 +55,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestMreža.cs" />
-    <Compile Include="TestPolje.cs" />
+    <Compile Include="TestMreže.cs" />
+    <Compile Include="TestPolja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PotapanjeBrodova\PotapanjeBrodova.csproj">
-      <Project>{8f8ac901-ca95-43c2-ba2a-db608ce18af0}</Project>
+      <Project>{79058b26-e13b-41bd-89ec-58fba68598bb}</Project>
       <Name>PotapanjeBrodova</Name>
     </ProjectReference>
   </ItemGroup>
