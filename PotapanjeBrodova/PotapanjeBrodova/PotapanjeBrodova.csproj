@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{79058B26-E13B-41BD-89EC-58FBA68598BB}</ProjectGuid>
+    <ProjectGuid>{8F8AC901-CA95-43C2-BA2A-DB608CE18AF0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PotapanjeBrodova</RootNamespace>
@@ -42,6 +42,7 @@
     <Compile Include="Mreža.cs" />
     <Compile Include="Polje.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedFiksneDuljine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
